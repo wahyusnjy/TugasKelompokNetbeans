@@ -13,4 +13,5 @@ Tugas Kelompok Pemrograman Visual
 >git push origin main
 
 +Perintah ambil data
->git push
+>git config pull.rebase true
+>git pull
