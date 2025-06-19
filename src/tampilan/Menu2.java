@@ -75,30 +75,30 @@ private void gantiPanel(JPanel parent, JPanel baru) {
 
         Panel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilan/logo_orian-removebg-150-60.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/logo_orian-removebg-150-60.png"))); // NOI18N
 
-        Homemaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilan/86493543_7136d4.jpg"))); // NOI18N
+        Homemaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/86493543_7136d4.jpg"))); // NOI18N
         Homemaster.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HomemasterActionPerformed(evt);
             }
         });
 
-        transaksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilan/transaksi.jpeg"))); // NOI18N
+        transaksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/transaksi.jpeg"))); // NOI18N
         transaksi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 transaksiActionPerformed(evt);
             }
         });
 
-        laporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilan/laporan.jpeg"))); // NOI18N
+        laporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/laporan.jpeg"))); // NOI18N
         laporan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 laporanActionPerformed(evt);
             }
         });
 
-        exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilan/out.png"))); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/out.png"))); // NOI18N
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitActionPerformed(evt);

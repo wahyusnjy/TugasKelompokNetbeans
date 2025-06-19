@@ -47,6 +47,7 @@ public class MenuMaster extends javax.swing.JPanel {
         jPanel6.setPreferredSize(new java.awt.Dimension(271, 322));
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/86493543_7136d4.jpg"))); // NOI18N
         jLabel1.setText("Master Data");
 
         databrng.setBackground(new java.awt.Color(255, 255, 255));
@@ -105,7 +106,7 @@ public class MenuMaster extends javax.swing.JPanel {
                         .addComponent(jLabel1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(0, 80, Short.MAX_VALUE)
+                        .addGap(75, 75, 75)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -129,7 +130,7 @@ public class MenuMaster extends javax.swing.JPanel {
                 .addComponent(jButton4)
                 .addGap(26, 26, 26)
                 .addComponent(jButton5)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         add(jPanel6, java.awt.BorderLayout.CENTER);

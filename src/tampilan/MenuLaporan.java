@@ -46,6 +46,7 @@ public class MenuLaporan extends javax.swing.JPanel {
         panelLaporan.setPreferredSize(new java.awt.Dimension(271, 322));
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/laporan.jpeg"))); // NOI18N
         jLabel1.setText("Laporan");
 
         laporstok.setBackground(new java.awt.Color(255, 255, 255));
@@ -114,7 +115,7 @@ public class MenuLaporan extends javax.swing.JPanel {
                 .addComponent(LaporBkeluar)
                 .addGap(26, 26, 26)
                 .addComponent(Laporsup)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         add(panelLaporan, java.awt.BorderLayout.CENTER);

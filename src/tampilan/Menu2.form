@@ -136,14 +136,14 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/tampilan/logo_orian-removebg-150-60.png"/>
+                  <Image iconType="3" name="/Gambar/logo_orian-removebg-150-60.png"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="Homemaster">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/tampilan/86493543_7136d4.jpg"/>
+                  <Image iconType="3" name="/Gambar/86493543_7136d4.jpg"/>
                 </Property>
               </Properties>
               <Events>
@@ -153,7 +153,7 @@
             <Component class="javax.swing.JButton" name="transaksi">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/tampilan/transaksi.jpeg"/>
+                  <Image iconType="3" name="/Gambar/transaksi.jpeg"/>
                 </Property>
               </Properties>
               <Events>
@@ -163,7 +163,7 @@
             <Component class="javax.swing.JButton" name="laporan">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/tampilan/laporan.jpeg"/>
+                  <Image iconType="3" name="/Gambar/laporan.jpeg"/>
                 </Property>
               </Properties>
               <Events>
@@ -173,7 +173,7 @@
             <Component class="javax.swing.JButton" name="exit">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/tampilan/out.png"/>
+                  <Image iconType="3" name="/Gambar/out.png"/>
                 </Property>
               </Properties>
               <Events>
