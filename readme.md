@@ -1,2 +1,15 @@
 Tugas Kelompok Pemrograman Visual
-tes
+
++Cara Menambahkan sql
+Buka phpmyadmin
+klik import
+masukan fie .sqlnya
+dan berikan nama inventory_kelompok_4
+
++Perintah push
+git add .
+git commit -m "Update dari tuliskannamakalian"
+git push origin main
+
++Perintah ambil data
+git push
