@@ -5,7 +5,7 @@ public class koneksi{
 private Connection koneksi;
 public Connection connect(){
 try{
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName("com.mysql.cj.jdbc.Driver");
     System.out.println("Berhasil Koneksi");
 }
 catch (ClassNotFoundException ex){
