@@ -15,3 +15,4 @@ Tugas Kelompok Pemrograman Visual
 +Perintah ambil data
 >git config pull.rebase true
 >git pull
+test
