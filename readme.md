@@ -1,10 +1,10 @@
-Tugas Kelompok Pemrograman Visual
-
-+Cara Menambahkan sql
-<p/>Buka phpmyadmin</p>
-<p/>klik import</p>
->masukan fie .sqlnya
->dan berikan nama inventory_kelompok_4
+<h1/>Tugas Kelompok Pemrograman Visual</h1>
+<p/></p>
+<h2/>+Cara Menambahkan sql</h2>
+<p/>>Buka phpmyadmin</p>
+<p/>>klik import</p>
+<p/>>masukan fie .sqlnya</p>
+<p/>>dan berikan nama inventory_kelompok_4</p>
 
 +Perintah push
 >git add .
