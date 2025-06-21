@@ -35,9 +35,9 @@ public class MenuMaster extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         databrng = new javax.swing.JButton();
         datakat = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        datasup = new javax.swing.JButton();
+        datauser = new javax.swing.JButton();
+        datalok = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -66,27 +66,27 @@ public class MenuMaster extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
-        jButton3.setText("Data Supplier");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        datasup.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        datasup.setText("Data Supplier");
+        datasup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                datasupActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
-        jButton4.setText("Data User");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        datauser.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        datauser.setText("Data User");
+        datauser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                datauserActionPerformed(evt);
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
-        jButton5.setText("Data Lokasi");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        datalok.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        datalok.setText("Data Lokasi");
+        datalok.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                datalokActionPerformed(evt);
             }
         });
 
@@ -97,18 +97,16 @@ public class MenuMaster extends javax.swing.JPanel {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(datakat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(datasup, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(databrng, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(80, 80, 80))))
+                            .addComponent(datauser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(datalok, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,11 +118,11 @@ public class MenuMaster extends javax.swing.JPanel {
                 .addGap(26, 26, 26)
                 .addComponent(datakat)
                 .addGap(26, 26, 26)
-                .addComponent(jButton3)
+                .addComponent(datasup)
                 .addGap(26, 26, 26)
-                .addComponent(jButton4)
+                .addComponent(datauser)
                 .addGap(26, 26, 26)
-                .addComponent(jButton5)
+                .addComponent(datalok)
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
@@ -149,25 +147,31 @@ public class MenuMaster extends javax.swing.JPanel {
 // TODO add your handling code here:
     }//GEN-LAST:event_datakatActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void datasupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datasupActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_datasupActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void datauserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datauserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_datauserActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void datalokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datalokActionPerformed
+    panelTarget.removeAll();
+    panelTarget.setLayout(new BorderLayout());
+    //new Kategori().setVisible(true);
+    panelTarget.add(new DataLokasi(), BorderLayout.CENTER);
+    panelTarget.revalidate();
+    panelTarget.repaint();    
+// TODO add your handling code here:
+    }//GEN-LAST:event_datalokActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton databrng;
     private javax.swing.JButton datakat;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton datalok;
+    private javax.swing.JButton datasup;
+    private javax.swing.JButton datauser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
