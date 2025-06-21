@@ -13,3 +13,5 @@
 <p/></p>
 <h2/>+Perintah ambil data</h2>
 <p/>>git pull</p>
+
+platform.active=default_platform
