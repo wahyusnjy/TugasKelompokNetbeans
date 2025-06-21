@@ -13,5 +13,8 @@
 <p/></p>
 <h2/>+Perintah ambil data</h2>
 <p/>>git pull</p>
-
-platform.active=default_platform
+<p/></p>
+<h2/>+Jika Mengalami Error Aneh/Tidak bisa di run</h2>
+<p/>Buka TugasKelompokNetbeans\nbproject</p>
+<p/>Dan edit file project.properties menggunakan notepad++</p>
+<p/>cari bagian -> platform.active= dan ubah isinya menjadi default_platform</p>
