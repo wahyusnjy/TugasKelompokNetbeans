@@ -182,7 +182,7 @@ private void kosong() {
         if (bar != -1) {
             txtkdLok.setText(tabmode.getValueAt(bar, 0).toString());
             txtnmLok.setText(tabmode.getValueAt(bar, 1).toString());
-            txtdesk.setText(tabmode.getValueAt(bar, 3).toString());
+            txtdesk.setText(tabmode.getValueAt(bar, 2).toString());
         }// TODO add your handling code here:
     }//GEN-LAST:event_tbllokMouseClicked
 
