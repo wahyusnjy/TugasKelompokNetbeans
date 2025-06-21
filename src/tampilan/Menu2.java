@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tampilan;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
@@ -217,7 +212,7 @@ private void gantiPanel(JPanel parent, JPanel baru) {
     }//GEN-LAST:event_transaksiActionPerformed
 
     private void laporanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_laporanActionPerformed
-    gantiPanel(Panel2, new MenuLaporan(Panel3));        // TODO add your handling code here:
+    gantiPanel(Panel2, new MenuLaporan(Panel3)); // TODO add your handling code here:
     }//GEN-LAST:event_laporanActionPerformed
 
     /**

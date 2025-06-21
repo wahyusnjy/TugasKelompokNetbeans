@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tampilan;
 
 import java.awt.BorderLayout;
@@ -115,7 +111,12 @@ public class MenuTransaksi extends javax.swing.JPanel {
     }//GEN-LAST:event_brngmskActionPerformed
 
     private void brngkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brngkeluarActionPerformed
-        // TODO add your handling code here:
+    panelTarget.removeAll();
+    panelTarget.setLayout(new BorderLayout());
+    panelTarget.add(new BarangKeluar(), BorderLayout.CENTER);
+    panelTarget.revalidate();
+    panelTarget.repaint();
+// TODO add your handling code here:
     }//GEN-LAST:event_brngkeluarActionPerformed
 
     private void mtsibrngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mtsibrngActionPerformed

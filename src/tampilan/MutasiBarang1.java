@@ -200,16 +200,16 @@ public class MutasiBarang1 extends javax.swing.JPanel {
                             .addComponent(jLabel8))
                         .addGap(51, 51, 51)
                         .addGroup(PanelMutasiBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(idm, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
                             .addComponent(tgl, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
                             .addComponent(kdbarang, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(darlok, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(kelok, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jml, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jml, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(idm)))
                     .addGroup(PanelMutasiBrngLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 507, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PanelMutasiBrngLayout.setVerticalGroup(
@@ -247,7 +247,7 @@ public class MutasiBarang1 extends javax.swing.JPanel {
                     .addComponent(create))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(5, Short.MAX_VALUE))
         );
 
         add(PanelMutasiBrng, java.awt.BorderLayout.CENTER);
