@@ -188,16 +188,16 @@ private void kosong() {
 
     private void bcreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcreateActionPerformed
         if (txtkdLok.getText().isEmpty() || txtnmLok.getText().isEmpty() || txtnmLok.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "ID, Kode Kategori, dan Nama Kategori harus diisi!");
+            JOptionPane.showMessageDialog(null, "Kode Lokasi, Nama Lokasi harus diisi!");
             return;
         }
 
-        String sql = "INSERT INTO kategori (kode_lokasi, nama_lokasi, deskripsi) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO lokasi (kode_lokasi, nama_lokasi, deskripsi) VALUES (?, ?, ?)";
         try {
             PreparedStatement stat = conn.prepareStatement(sql);
             stat.setString(1, txtkdLok.getText());
             stat.setString(2, txtnmLok.getText());
-            stat.setString(4, txtdesk.getText());
+            stat.setString(3, txtdesk.getText());
 
             stat.executeUpdate();
             JOptionPane.showMessageDialog(null, "Data Berhasil Disimpan");
@@ -216,11 +216,12 @@ private void kosong() {
             return;
         }
 
-        String sql = "UPDATE kategori SET kode_kategori = ?, nama_kategori = ?, deskripsi = ? WHERE id = ?";
+        String sql = "UPDATE kategori SET  nama_kategori = ?, deskripsi = ? WHERE kode_kategori = ?";
         try {
             PreparedStatement stat = conn.prepareStatement(sql);
+            stat.setString(3,txtkdLok.getText());
             stat.setString(1, txtnmLok.getText());
-            stat.setString(3, txtdesk.getText());
+            stat.setString(2, txtdesk.getText());
 
             stat.executeUpdate();
             JOptionPane.showMessageDialog(null, "Data Berhasil Diupdate");
