@@ -216,12 +216,12 @@ private void kosong() {
             return;
         }
 
-        String sql = "UPDATE kategori SET  nama_kategori = ?, deskripsi = ? WHERE kode_kategori = ?";
+        String sql = "UPDATE lokasi SET  nama_lokasi = ?, deskripsi = ? WHERE kode_lokasi = ?";
         try {
             PreparedStatement stat = conn.prepareStatement(sql);
-            stat.setString(3,txtkdLok.getText());
             stat.setString(1, txtnmLok.getText());
             stat.setString(2, txtdesk.getText());
+            stat.setString(3,txtkdLok.getText());
 
             stat.executeUpdate();
             JOptionPane.showMessageDialog(null, "Data Berhasil Diupdate");
