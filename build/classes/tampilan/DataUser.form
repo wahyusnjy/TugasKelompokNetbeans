@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -42,12 +42,12 @@
                           <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="ldlid" alignment="1" pref="72" max="32767" attributes="0"/>
-                                  <Component id="lblnmKategori" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lbldesk" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblkdKategori" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="lblid" alignment="1" pref="72" max="32767" attributes="0"/>
+                                  <Component id="lbluser" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblpass" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblnm" alignment="1" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="lbldesk1" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblrole" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -80,27 +80,27 @@
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="ldlid" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblid" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtID" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblkdKategori" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblnm" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtkdKategori" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblnmKategori" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbluser" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtnmKategori" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbldesk" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblpass" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtdesk" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbldesk1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblrole" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtdesk1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
@@ -122,7 +122,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="ldlid">
+        <Component class="javax.swing.JLabel" name="lblid">
           <Properties>
             <Property name="text" type="java.lang.String" value="ID User"/>
           </Properties>
@@ -136,7 +136,7 @@
             <Property name="text" type="java.lang.String" value="Data User"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblnmKategori">
+        <Component class="javax.swing.JLabel" name="lbluser">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nama User"/>
           </Properties>
@@ -154,7 +154,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="tblkat">
+            <Component class="javax.swing.JTable" name="tbluser">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="4">
@@ -169,17 +169,17 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblkatMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tbluserMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="lblkdKategori">
+        <Component class="javax.swing.JLabel" name="lblnm">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nama"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbldesk">
+        <Component class="javax.swing.JLabel" name="lblpass">
           <Properties>
             <Property name="text" type="java.lang.String" value="Password"/>
           </Properties>
@@ -202,7 +202,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bupdateActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbldesk1">
+        <Component class="javax.swing.JLabel" name="lblrole">
           <Properties>
             <Property name="text" type="java.lang.String" value="Role"/>
           </Properties>

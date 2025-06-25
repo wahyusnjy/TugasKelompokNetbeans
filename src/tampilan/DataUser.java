@@ -27,31 +27,31 @@ public class DataUser extends javax.swing.JPanel {
     private void initComponents() {
 
         PanelKatBrng = new javax.swing.JPanel();
-        ldlid = new javax.swing.JLabel();
+        lblid = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        lblnmKategori = new javax.swing.JLabel();
+        lbluser = new javax.swing.JLabel();
         txtID = new javax.swing.JTextField();
         txtkdKategori = new javax.swing.JTextField();
         txtnmKategori = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblkat = new javax.swing.JTable();
-        lblkdKategori = new javax.swing.JLabel();
-        lbldesk = new javax.swing.JLabel();
+        tbluser = new javax.swing.JTable();
+        lblnm = new javax.swing.JLabel();
+        lblpass = new javax.swing.JLabel();
         txtdesk = new javax.swing.JTextField();
         bcreate = new javax.swing.JButton();
         bupdate = new javax.swing.JButton();
-        lbldesk1 = new javax.swing.JLabel();
+        lblrole = new javax.swing.JLabel();
         txtdesk1 = new javax.swing.JTextField();
 
-        ldlid.setText("ID User");
+        lblid.setText("ID User");
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Data User");
 
-        lblnmKategori.setText("Nama User");
+        lbluser.setText("Nama User");
 
-        tblkat.setModel(new javax.swing.table.DefaultTableModel(
+        tbluser.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -62,16 +62,16 @@ public class DataUser extends javax.swing.JPanel {
                 "ID Kategori", "Kode Kategori", "Nama Kategori", "Deskripsi"
             }
         ));
-        tblkat.addMouseListener(new java.awt.event.MouseAdapter() {
+        tbluser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblkatMouseClicked(evt);
+                tbluserMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tblkat);
+        jScrollPane1.setViewportView(tbluser);
 
-        lblkdKategori.setText("Nama");
+        lblnm.setText("Nama");
 
-        lbldesk.setText("Password");
+        lblpass.setText("Password");
 
         bcreate.setText("Create Data");
         bcreate.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public class DataUser extends javax.swing.JPanel {
             }
         });
 
-        lbldesk1.setText("Role");
+        lblrole.setText("Role");
 
         javax.swing.GroupLayout PanelKatBrngLayout = new javax.swing.GroupLayout(PanelKatBrng);
         PanelKatBrng.setLayout(PanelKatBrngLayout);
@@ -103,11 +103,11 @@ public class DataUser extends javax.swing.JPanel {
                         .addGap(56, 56, 56)
                         .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(ldlid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
-                                .addComponent(lblnmKategori)
-                                .addComponent(lbldesk)
-                                .addComponent(lblkdKategori, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(lbldesk1))
+                                .addComponent(lblid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+                                .addComponent(lbluser)
+                                .addComponent(lblpass)
+                                .addComponent(lblnm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblrole))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtdesk, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
@@ -132,23 +132,23 @@ public class DataUser extends javax.swing.JPanel {
                 .addComponent(jLabel3)
                 .addGap(28, 28, 28)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ldlid)
+                    .addComponent(lblid)
                     .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblkdKategori)
+                    .addComponent(lblnm)
                     .addComponent(txtkdKategori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnmKategori)
+                    .addComponent(lbluser)
                     .addComponent(txtnmKategori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbldesk)
+                    .addComponent(lblpass)
                     .addComponent(txtdesk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbldesk1)
+                    .addComponent(lblrole)
                     .addComponent(txtdesk1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(PanelKatBrngLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,15 +174,15 @@ public class DataUser extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tblkatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblkatMouseClicked
-        int bar = tblkat.getSelectedRow();
+    private void tbluserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbluserMouseClicked
+        int bar = tbluser.getSelectedRow();
         if (bar != -1) {
             txtID.setText(tabmode.getValueAt(bar, 0).toString());
             txtkdKategori.setText(tabmode.getValueAt(bar, 1).toString());
             txtnmKategori.setText(tabmode.getValueAt(bar, 2).toString());
             txtdesk.setText(tabmode.getValueAt(bar, 3).toString());
         }// TODO add your handling code here:
-    }//GEN-LAST:event_tblkatMouseClicked
+    }//GEN-LAST:event_tbluserMouseClicked
 
     private void bcreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcreateActionPerformed
         if (txtID.getText().isEmpty() || txtkdKategori.getText().isEmpty() || txtnmKategori.getText().isEmpty()) {
@@ -240,12 +240,12 @@ public class DataUser extends javax.swing.JPanel {
     private javax.swing.JButton bupdate;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lbldesk;
-    private javax.swing.JLabel lbldesk1;
-    private javax.swing.JLabel lblkdKategori;
-    private javax.swing.JLabel lblnmKategori;
-    private javax.swing.JLabel ldlid;
-    private javax.swing.JTable tblkat;
+    private javax.swing.JLabel lblid;
+    private javax.swing.JLabel lblnm;
+    private javax.swing.JLabel lblpass;
+    private javax.swing.JLabel lblrole;
+    private javax.swing.JLabel lbluser;
+    private javax.swing.JTable tbluser;
     private javax.swing.JTextField txtID;
     private javax.swing.JTextField txtdesk;
     private javax.swing.JTextField txtdesk1;

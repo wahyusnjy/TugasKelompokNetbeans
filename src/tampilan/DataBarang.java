@@ -19,8 +19,8 @@ public class DataBarang extends javax.swing.JPanel {
         conn = new koneksi().connect();
         datatable();
         isiComboBox(InputKodeBarang, "kode_barang", "barang", "-- Pilih Kode Barang --");
-        isiComboBox(InputKategori, "kode_kategori", "barang", "-- Pilih Lokasi Asal --");
-        isiComboBox(InputLokasi, "kode_lokasi", "barang", "-- Pilih Kategori --");
+        isiComboBox(InputKategori, "kode_kategori", "kategori", "-- Pilih Lokasi Asal --");
+        isiComboBox(InputLokasi, "kode_lokasi", "lokasi", "-- Pilih Kategori --");
 
     }
 
