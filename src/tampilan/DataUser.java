@@ -87,7 +87,7 @@ public class DataUser extends javax.swing.JPanel {
             }
         });
 
-        lbldesk1.setText("Password");
+        lbldesk1.setText("Role");
 
         javax.swing.GroupLayout PanelKatBrngLayout = new javax.swing.GroupLayout(PanelKatBrng);
         PanelKatBrng.setLayout(PanelKatBrngLayout);
