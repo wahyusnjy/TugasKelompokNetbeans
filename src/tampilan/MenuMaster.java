@@ -158,7 +158,13 @@ public class MenuMaster extends javax.swing.JPanel {
     }//GEN-LAST:event_datasupActionPerformed
 
     private void datauserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datauserActionPerformed
-        // TODO add your handling code here:
+    panelTarget.removeAll();
+    panelTarget.setLayout(new BorderLayout());
+    //new Kategori().setVisible(true);
+    panelTarget.add(new DataUser(), BorderLayout.CENTER);
+    panelTarget.revalidate();
+    panelTarget.repaint();
+// TODO add your handling code here:
     }//GEN-LAST:event_datauserActionPerformed
 
     private void datalokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datalokActionPerformed
