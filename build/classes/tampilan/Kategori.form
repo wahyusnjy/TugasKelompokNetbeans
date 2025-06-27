@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -16,17 +16,14 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Component id="PanelKatBrng" alignment="0" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="11" max="32767" attributes="0"/>
-          </Group>
+          <Component id="PanelKatBrng" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="PanelKatBrng" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -45,34 +42,32 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="lblkdKategori" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ldlid" alignment="1" min="-2" pref="72" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblnmKategori" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbldesk" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtdesk" alignment="0" pref="235" max="32767" attributes="0"/>
+                              <Component id="txtkdKategori" alignment="1" max="32767" attributes="0"/>
+                              <Component id="txtID" alignment="1" max="32767" attributes="0"/>
+                              <Component id="txtnmKategori" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="480" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                           <Component id="bupdate" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="bcreate" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblnmSupplier" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="lblkdSupplier" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblid" min="-2" pref="72" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="lblalamat" min="-2" max="-2" attributes="0"/>
-                              <Component id="lbltelp" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtalamat" alignment="0" pref="306" max="32767" attributes="0"/>
-                              <Component id="txtkdSupplier" alignment="1" max="32767" attributes="0"/>
-                              <Component id="txtID" alignment="1" max="32767" attributes="0"/>
-                              <Component id="txtnmSupplier" alignment="1" max="32767" attributes="0"/>
-                              <Component id="txttelp" max="32767" attributes="0"/>
-                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace pref="19" max="32767" attributes="0"/>
@@ -86,44 +81,40 @@
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblid" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ldlid" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtID" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblkdSupplier" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtkdSupplier" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblkdKategori" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtkdKategori" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblnmSupplier" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtnmSupplier" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblnmKategori" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtnmKategori" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblalamat" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtalamat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbldesk" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtdesk" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbltelp" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txttelp" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="bupdate" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="bcreate" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="184" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lblid">
+        <Component class="javax.swing.JLabel" name="ldlid">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID "/>
+            <Property name="text" type="java.lang.String" value="ID Kategori"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -132,19 +123,19 @@
               <Font name="Calibri" size="18" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Data Supplier"/>
+            <Property name="text" type="java.lang.String" value="Kategori Barang"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblnmSupplier">
+        <Component class="javax.swing.JLabel" name="lblnmKategori">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nama Supplier"/>
+            <Property name="text" type="java.lang.String" value="Nama Kategori"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtID">
         </Component>
-        <Component class="javax.swing.JTextField" name="txtkdSupplier">
+        <Component class="javax.swing.JTextField" name="txtkdKategori">
         </Component>
-        <Component class="javax.swing.JTextField" name="txtnmSupplier">
+        <Component class="javax.swing.JTextField" name="txtnmKategori">
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
@@ -153,7 +144,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="tblsup">
+            <Component class="javax.swing.JTable" name="tblkat">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="4">
@@ -168,22 +159,22 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblsupMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblkatMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="lblkdSupplier">
+        <Component class="javax.swing.JLabel" name="lblkdKategori">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Kode Supplier"/>
+            <Property name="text" type="java.lang.String" value="Kode Kategori"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblalamat">
+        <Component class="javax.swing.JLabel" name="lbldesk">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Alamat"/>
+            <Property name="text" type="java.lang.String" value="Deskripsi"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtalamat">
+        <Component class="javax.swing.JTextField" name="txtdesk">
         </Component>
         <Component class="javax.swing.JButton" name="bcreate">
           <Properties>
@@ -200,13 +191,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bupdateActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lbltelp">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="No Telepon"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txttelp">
         </Component>
       </SubComponents>
     </Container>
