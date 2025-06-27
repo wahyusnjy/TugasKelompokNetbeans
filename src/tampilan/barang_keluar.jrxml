@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1edb1e9-4322-4137-a4b0-8e56668bd537">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     barang_keluar.`no_transaksi` AS barang_keluar_no_transaksi,
+     barang_keluar.`tanggal` AS barang_keluar_tanggal,
+     barang_keluar.`kode_barang` AS barang_keluar_kode_barang,
+     barang_keluar.`jumlah` AS barang_keluar_jumlah,
+     barang_keluar.`tujuan` AS barang_keluar_tujuan
+FROM
+     `barang_keluar` barang_keluar]]>
+	</queryString>
+	<field name="barang_keluar_no_transaksi" class="java.lang.String"/>
+	<field name="barang_keluar_tanggal" class="java.sql.Date"/>
+	<field name="barang_keluar_kode_barang" class="java.lang.String"/>
+	<field name="barang_keluar_jumlah" class="java.lang.Integer"/>
+	<field name="barang_keluar_tujuan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="30" width="160" height="20" uuid="d624bd25-fb3f-4232-badd-923cdd43aa0b"/>
+				<text><![CDATA[LAPORAN BARANG KELUAR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="150" height="20" uuid="c20ca4bc-4369-4ef9-bf93-818079d01805"/>
+				<text><![CDATA[barang_keluar_no_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="150" height="20" uuid="1de854f3-ff33-47ef-9dfd-a30a2b6e29e7"/>
+				<text><![CDATA[barang_keluar_tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="150" height="20" uuid="f486d980-e145-4abf-ba66-4c1d3b4e5459"/>
+				<text><![CDATA[barang_keluar_kode_barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="150" height="20" uuid="8cef1395-5694-4f59-9628-f16ef96e8109"/>
+				<text><![CDATA[barang_keluar_jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="150" height="20" uuid="ad517e76-1370-4e5c-b672-cc8058a60a55"/>
+				<text><![CDATA[barang_keluar_tujuan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="150" height="20" uuid="12c88d79-9a2f-497c-b3e4-48784edb83ab"/>
+				<textFieldExpression><![CDATA[$F{barang_keluar_no_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="150" height="20" uuid="d0d12224-c1ec-4852-a7e7-799c9b2be271"/>
+				<textFieldExpression><![CDATA[$F{barang_keluar_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="150" height="20" uuid="e6651777-0b5b-4b08-b6df-77a076a561ad"/>
+				<textFieldExpression><![CDATA[$F{barang_keluar_kode_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="150" height="20" uuid="ce5b947c-d314-4a19-9bdc-976d3175cff7"/>
+				<textFieldExpression><![CDATA[$F{barang_keluar_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="150" height="20" uuid="12b99c0d-a22d-4166-bf63-d78c2b4a08d5"/>
+				<textFieldExpression><![CDATA[$F{barang_keluar_tujuan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

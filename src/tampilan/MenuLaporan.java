@@ -2,6 +2,18 @@ package tampilan;
 
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
+import java.io.File;
+import java.sql.*;
+import java.util.HashMap;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import koneksi.koneksi;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
@@ -118,18 +130,91 @@ public class MenuLaporan extends javax.swing.JPanel {
 
     private void laporstokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_laporstokActionPerformed
            // TODO add your handling code here:
+           try {
+    // Lokasi file .jasper (file hasil compile dari .jrxml)
+    String namaFile = "src/tampilan/stock_barang.jasper";
+    Connection con = new koneksi().connect();
+    // Parameter untuk report, bisa dikosongkan jika tidak ada parameter
+    HashMap<String, Object> parameter = new HashMap<>();
+    // File report
+    File report_file = new File(namaFile);
+    // Load report (gunakan variabel report_file agar konsisten)
+    JasperReport report = (JasperReport) JRLoader.loadObject(report_file);
+    // Isi report dengan data dari database
+    JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameter, con);
+    // Tampilkan report
+    JasperViewer.viewReport(jasperPrint, false);
+    JasperViewer.setDefaultLookAndFeelDecorated(true);
+} catch (JRException e) {
+    JOptionPane.showMessageDialog(null, "Error menampilkan laporan: " + e.getMessage());
+}
+
     }//GEN-LAST:event_laporstokActionPerformed
 
     private void laporBmasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_laporBmasukActionPerformed
         // TODO add your handling code here:
+         try {
+    // Lokasi file .jasper (file hasil compile dari .jrxml)
+    String namaFile = "src/tampilan/Laporan_stock_barang.jasper";
+    Connection con = new koneksi().connect();
+    // Parameter untuk report, bisa dikosongkan jika tidak ada parameter
+    HashMap<String, Object> parameter = new HashMap<>();
+    // File report
+    File report_file = new File(namaFile);
+    // Load report (gunakan variabel report_file agar konsisten)
+    JasperReport report = (JasperReport) JRLoader.loadObject(report_file);
+    // Isi report dengan data dari database
+    JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameter, con);
+    // Tampilkan report
+    JasperViewer.viewReport(jasperPrint, false);
+    JasperViewer.setDefaultLookAndFeelDecorated(true);
+} catch (JRException e) {
+    JOptionPane.showMessageDialog(null, "Error menampilkan laporan: " + e.getMessage());
+}
     }//GEN-LAST:event_laporBmasukActionPerformed
 
     private void LaporBkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LaporBkeluarActionPerformed
         // TODO add your handling code here:
+         try {
+    // Lokasi file .jasper (file hasil compile dari .jrxml)
+    String namaFile = "src/tampilan/barang_keluar.jasper";
+    Connection con = new koneksi().connect();
+    // Parameter untuk report, bisa dikosongkan jika tidak ada parameter
+    HashMap<String, Object> parameter = new HashMap<>();
+    // File report
+    File report_file = new File(namaFile);
+    // Load report (gunakan variabel report_file agar konsisten)
+    JasperReport report = (JasperReport) JRLoader.loadObject(report_file);
+    // Isi report dengan data dari database
+    JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameter, con);
+    // Tampilkan report
+    JasperViewer.viewReport(jasperPrint, false);
+    JasperViewer.setDefaultLookAndFeelDecorated(true);
+} catch (JRException e) {
+    JOptionPane.showMessageDialog(null, "Error menampilkan laporan: " + e.getMessage());
+}
     }//GEN-LAST:event_LaporBkeluarActionPerformed
 
     private void LaporsupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LaporsupActionPerformed
         // TODO add your handling code here:
+         try {
+    // Lokasi file .jasper (file hasil compile dari .jrxml)
+    String namaFile = "src/tampilan/supplier.jasper";
+    Connection con = new koneksi().connect();
+    // Parameter untuk report, bisa dikosongkan jika tidak ada parameter
+    HashMap<String, Object> parameter = new HashMap<>();
+    // File report
+    File report_file = new File(namaFile);
+    // Load report (gunakan variabel report_file agar konsisten)
+    JasperReport report = (JasperReport) JRLoader.loadObject(report_file);
+    // Isi report dengan data dari database
+    JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameter, con);
+    // Tampilkan report
+    JasperViewer.viewReport(jasperPrint, false);
+    JasperViewer.setDefaultLookAndFeelDecorated(true);
+} catch (JRException e) {
+    JOptionPane.showMessageDialog(null, "Error menampilkan laporan: " + e.getMessage());
+}
     }//GEN-LAST:event_LaporsupActionPerformed
 
 
