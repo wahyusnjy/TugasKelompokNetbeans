@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c471daa-dce8-488e-9623-cce7c8c66b54">
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
@@ -24,9 +24,16 @@ FROM
 	<title>
 		<band height="79" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="20" width="160" height="20" uuid="9f341550-f861-4b6f-a37f-251bea3c0210"/>
+				<reportElement x="447" y="14" width="330" height="50" uuid="576a67ef-9116-4d50-b680-e04cc49e5645"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
 				<text><![CDATA[LAPORAN BARANG MASUK]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="434" height="79" uuid="75c57955-3fe1-483e-b4e2-5c9079f99193"/>
+				<imageExpression><![CDATA["C:\\Users\\Henboy\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\\LocalState\\rootfs\\home\\phipin197\\TugasKelompokNetbeans\\src\\Gambar\\logoorian-Copy.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
@@ -35,47 +42,47 @@ FROM
 	<columnHeader>
 		<band height="22" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="160" height="20" uuid="bf26910a-f5a3-4aef-9484-b3f56c6ff453"/>
-				<text><![CDATA[barang_masuk_no_transaksi]]></text>
+				<reportElement mode="Opaque"  backcolor="#FF99FF" x="0" y="0" width="160" height="20" uuid="bf26910a-f5a3-4aef-9484-b3f56c6ff453"/>
+				<text><![CDATA[No Transaksi]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="160" y="0" width="160" height="20" uuid="250401ae-b9e4-42b8-8029-2092768771ee"/>
-				<text><![CDATA[barang_masuk_tanggal]]></text>
+				<reportElement mode="Opaque"  backcolor="#FF99FF" x="160" y="0" width="160" height="20" uuid="250401ae-b9e4-42b8-8029-2092768771ee"/>
+				<text><![CDATA[Tanggal]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="320" y="0" width="160" height="20" uuid="7a684030-846f-4a9b-b586-764520e347ee"/>
-				<text><![CDATA[barang_masuk_kode_barang]]></text>
+				<reportElement mode="Opaque"  backcolor="#FF99FF" x="320" y="0" width="160" height="20" uuid="7a684030-846f-4a9b-b586-764520e347ee"/>
+				<text><![CDATA[Kode Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="480" y="0" width="160" height="20" uuid="86ef65f0-c57c-45ba-98f1-c9030e771bd8"/>
-				<text><![CDATA[barang_masuk_jumlah]]></text>
+				<reportElement mode="Opaque"  backcolor="#FF99FF" x="480" y="0" width="160" height="20" uuid="86ef65f0-c57c-45ba-98f1-c9030e771bd8"/>
+				<text><![CDATA[Jumlah]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="640" y="0" width="160" height="20" uuid="51ca2df1-6782-4793-864a-25e3434f5920"/>
-				<text><![CDATA[barang_masuk_kode_supplier]]></text>
+				<reportElement mode="Opaque"  backcolor="#FF99FF" x="640" y="0" width="160" height="20" uuid="51ca2df1-6782-4793-864a-25e3434f5920"/>
+				<text><![CDATA[Kode Supplier]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="31" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="160" height="20" uuid="33814dd7-4f9c-425b-be37-ad563d79388a"/>
+				<reportElement mode="Opaque"   backcolor="#CCCCCC" x="0" y="0" width="160" height="20" uuid="33814dd7-4f9c-425b-be37-ad563d79388a"/>
 				<textFieldExpression><![CDATA[$F{barang_masuk_no_transaksi}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="0" width="160" height="20" uuid="ed454275-2bd8-4b9d-9dbe-09dff94a972a"/>
+				<reportElement mode="Opaque"   backcolor="#CCCCCC" x="160" y="0" width="160" height="20" uuid="ed454275-2bd8-4b9d-9dbe-09dff94a972a"/>
 				<textFieldExpression><![CDATA[$F{barang_masuk_tanggal}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="320" y="0" width="160" height="20" uuid="78d86d8a-10ed-4913-9fd2-9dbddd993b7f"/>
+				<reportElement mode="Opaque"   backcolor="#CCCCCC" x="320" y="0" width="160" height="20" uuid="78d86d8a-10ed-4913-9fd2-9dbddd993b7f"/>
 				<textFieldExpression><![CDATA[$F{barang_masuk_kode_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="480" y="0" width="160" height="20" uuid="fc291bca-c6e5-414b-b792-4a9d2ba68bd3"/>
+				<reportElement mode="Opaque"   backcolor="#CCCCCC" x="480" y="0" width="160" height="20" uuid="fc291bca-c6e5-414b-b792-4a9d2ba68bd3"/>
 				<textFieldExpression><![CDATA[$F{barang_masuk_jumlah}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="640" y="0" width="160" height="20" uuid="8c8a6099-df39-4c14-a2f0-28872e9ab918"/>
+				<reportElement mode="Opaque"   backcolor="#CCCCCC" x="640" y="0" width="160" height="20" uuid="8c8a6099-df39-4c14-a2f0-28872e9ab918"/>
 				<textFieldExpression><![CDATA[$F{barang_masuk_kode_supplier}]]></textFieldExpression>
 			</textField>
 		</band>
