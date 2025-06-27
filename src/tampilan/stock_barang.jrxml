@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f6b1e32a-6bb6-436e-914c-a3d189c14288">
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString language="SQL">
@@ -26,76 +26,84 @@ FROM
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
-			<staticText>
-				<reportElement x="0" y="0" width="158" height="20" uuid="375d3262-a2c8-4fb2-999d-d40162ef63f8"/>
-				<text><![CDATA[LAPORAN STOCK BARANG]]></text>
-			</staticText>
+		<band height="93" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="376" height="93" uuid="070b56f5-eb1b-4539-93f8-a260db659b3d"/>
+				<imageExpression><![CDATA["C:\\Users\\Henboy\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\\LocalState\\rootfs\\home\\phipin197\\TugasKelompokNetbeans\\src\\Gambar\\logoorian-Copy.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="262" y="29" width="243" height="37" uuid="f1879744-241c-47f4-beb9-820a2afc5d6f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Stock Barang]]></text>
+			</staticText>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="29" splitType="Stretch">
+		<band height="21" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="107" height="20" uuid="fcc0a4ed-c351-4bbd-b215-fd137e9ad2c5"/>
-				<text><![CDATA[barang_id]]></text>
+				<reportElement mode="Opaque" x="0" y="0" width="107" height="20" backcolor="#FF99FF" uuid="fcc0a4ed-c351-4bbd-b215-fd137e9ad2c5"/>
+				<text><![CDATA[ID Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="107" y="0" width="107" height="20" uuid="b201891b-f3fa-42f9-91b8-fd21bb2ec461"/>
-				<text><![CDATA[barang_kode_barang]]></text>
+				<reportElement mode="Opaque" x="107" y="0" width="107" height="20" backcolor="#FF99FF" uuid="b201891b-f3fa-42f9-91b8-fd21bb2ec461"/>
+				<text><![CDATA[Kode Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="214" y="0" width="107" height="20" uuid="90f6810a-be0d-4312-af13-b6d59d59367b"/>
-				<text><![CDATA[barang_nama_barang]]></text>
+				<reportElement mode="Opaque" x="214" y="0" width="107" height="20" backcolor="#FF99FF" uuid="90f6810a-be0d-4312-af13-b6d59d59367b"/>
+				<text><![CDATA[Nama Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="321" y="0" width="107" height="20" uuid="7d255041-bd4b-4590-94c0-76342a6b3a50"/>
-				<text><![CDATA[barang_kode_kategori]]></text>
+				<reportElement mode="Opaque" x="321" y="0" width="107" height="20" backcolor="#FF99FF" uuid="7d255041-bd4b-4590-94c0-76342a6b3a50"/>
+				<text><![CDATA[Kode Kategori]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="428" y="0" width="107" height="20" uuid="94924be4-97a0-49b7-82fc-f8b379aea6bb"/>
-				<text><![CDATA[barang_kode_lokasi]]></text>
+				<reportElement mode="Opaque" x="428" y="0" width="107" height="20" backcolor="#FF99FF" uuid="94924be4-97a0-49b7-82fc-f8b379aea6bb"/>
+				<text><![CDATA[Kode Lokasi]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="535" y="0" width="107" height="20" uuid="4af2f90d-0bec-4a43-987c-91a6a4db3380"/>
-				<text><![CDATA[barang_stok]]></text>
+				<reportElement mode="Opaque" x="535" y="0" width="107" height="20" backcolor="#FF99FF" uuid="4af2f90d-0bec-4a43-987c-91a6a4db3380"/>
+				<text><![CDATA[Stock]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="642" y="0" width="107" height="20" uuid="12499a20-f4de-48c8-894f-bcdfcd8ec5a6"/>
-				<text><![CDATA[barang_harga]]></text>
+				<reportElement mode="Opaque" x="642" y="0" width="107" height="20" backcolor="#FF99FF" uuid="12499a20-f4de-48c8-894f-bcdfcd8ec5a6"/>
+				<text><![CDATA[Harga]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="30" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="107" height="20" uuid="a36b0a67-0e8b-4e9f-bf32-9f5d484e77a8"/>
+				<reportElement mode="Opaque" x="0" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="a36b0a67-0e8b-4e9f-bf32-9f5d484e77a8"/>
 				<textFieldExpression><![CDATA[$F{barang_id}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="107" y="0" width="107" height="20" uuid="c9d3ec6f-6d67-454f-909b-5e56331dafc7"/>
+				<reportElement mode="Opaque" x="107" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="c9d3ec6f-6d67-454f-909b-5e56331dafc7"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="214" y="0" width="107" height="20" uuid="737e3fe5-5e59-43af-a9df-522def8b9fa2"/>
+				<reportElement mode="Opaque" x="214" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="737e3fe5-5e59-43af-a9df-522def8b9fa2"/>
 				<textFieldExpression><![CDATA[$F{barang_nama_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="321" y="0" width="107" height="20" uuid="a50e4f1d-27ba-43a8-8241-7b28a88780ce"/>
+				<reportElement mode="Opaque" x="321" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="a50e4f1d-27ba-43a8-8241-7b28a88780ce"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_kategori}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="428" y="0" width="107" height="20" uuid="0ab88e83-1772-4569-b3c4-c7ddc56b7fdd"/>
+				<reportElement mode="Opaque" x="428" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="0ab88e83-1772-4569-b3c4-c7ddc56b7fdd"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_lokasi}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="535" y="0" width="107" height="20" uuid="b6e37f8b-950c-4891-9c2f-4cad67c1ad4b"/>
+				<reportElement mode="Opaque" x="535" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="b6e37f8b-950c-4891-9c2f-4cad67c1ad4b"/>
 				<textFieldExpression><![CDATA[$F{barang_stok}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="642" y="0" width="107" height="20" uuid="8fdf1e28-2a0d-43ba-922e-a83f8c22591b"/>
+				<reportElement mode="Opaque" x="642" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="8fdf1e28-2a0d-43ba-922e-a83f8c22591b"/>
 				<textFieldExpression><![CDATA[$F{barang_harga}]]></textFieldExpression>
 			</textField>
 		</band>

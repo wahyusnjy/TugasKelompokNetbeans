@@ -155,7 +155,7 @@ public class MenuLaporan extends javax.swing.JPanel {
         // TODO add your handling code here:
          try {
     // Lokasi file .jasper (file hasil compile dari .jrxml)
-    String namaFile = "src/tampilan/Laporan_stock_barang.jasper";
+    String namaFile = "src/tampilan/LAPORAN_BARANG_MASUK.jasper";
     Connection con = new koneksi().connect();
     // Parameter untuk report, bisa dikosongkan jika tidak ada parameter
     HashMap<String, Object> parameter = new HashMap<>();

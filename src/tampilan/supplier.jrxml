@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4a70c96d-c7b2-4489-86a6-ff559e79e4a8">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="80"/>
 	<queryString language="SQL">
 		<![CDATA[SELECT
      supplier.`id` AS supplier_id,
@@ -22,60 +22,68 @@ FROM
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
-			<staticText>
-				<reportElement x="10" y="30" width="160" height="20" uuid="37176c9a-50db-4a8c-8f61-5257a82de695"/>
-				<text><![CDATA[LAPORAN BARANG MASUK]]></text>
-			</staticText>
+		<band height="93" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="376" height="93" uuid="31fb88df-4dda-490a-8318-2cfe37269359"/>
+				<imageExpression><![CDATA["C:\\Users\\Henboy\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\\LocalState\\rootfs\\home\\phipin197\\TugasKelompokNetbeans\\src\\Gambar\\logoorian-Copy.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="261" y="14" width="249" height="50" uuid="05f9dfea-6c55-4fe9-8ee9-79714669cff1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN SUPPLIER]]></text>
+			</staticText>
+		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="150" height="20" uuid="21abd8ac-c950-4837-8046-1db7cf7c1f18"/>
+				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#FF99FF" uuid="21abd8ac-c950-4837-8046-1db7cf7c1f18"/>
 				<text><![CDATA[supplier_id]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="150" y="0" width="150" height="20" uuid="f2ea59a6-8ddb-4861-bcc2-0873831b852a"/>
+				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#FF99FF" uuid="f2ea59a6-8ddb-4861-bcc2-0873831b852a"/>
 				<text><![CDATA[supplier_kode_supplier]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="0" width="150" height="20" uuid="7fe802b0-9123-490d-995e-2ece60f0b8ce"/>
+				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#FF99FF" uuid="7fe802b0-9123-490d-995e-2ece60f0b8ce"/>
 				<text><![CDATA[supplier_nama_supplier]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="0" width="150" height="20" uuid="d57088a6-0b48-429b-955c-d1cf2b8c2272"/>
+				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#FF99FF" uuid="d57088a6-0b48-429b-955c-d1cf2b8c2272"/>
 				<text><![CDATA[supplier_alamat]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="600" y="0" width="150" height="20" uuid="e8f2da49-d4a0-418d-aa4a-91713d69425b"/>
+				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#FF99FF" uuid="e8f2da49-d4a0-418d-aa4a-91713d69425b"/>
 				<text><![CDATA[supplier_telepon]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="22" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="150" height="20" uuid="d841447d-f477-4eb3-ad8b-51237d0a2c08"/>
+				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="d841447d-f477-4eb3-ad8b-51237d0a2c08"/>
 				<textFieldExpression><![CDATA[$F{supplier_id}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="150" y="0" width="150" height="20" uuid="f9503ac3-d021-48c4-9ced-e8405e246436"/>
+				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="f9503ac3-d021-48c4-9ced-e8405e246436"/>
 				<textFieldExpression><![CDATA[$F{supplier_kode_supplier}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="0" width="150" height="20" uuid="feb88b47-a6df-4e4c-8e6f-bd9d81f1a6d2"/>
+				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="feb88b47-a6df-4e4c-8e6f-bd9d81f1a6d2"/>
 				<textFieldExpression><![CDATA[$F{supplier_nama_supplier}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="450" y="0" width="150" height="20" uuid="e76e3b3d-702e-4362-8714-505ea4425588"/>
+				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="e76e3b3d-702e-4362-8714-505ea4425588"/>
 				<textFieldExpression><![CDATA[$F{supplier_alamat}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="600" y="0" width="150" height="20" uuid="74f9e89b-3dc4-462b-909c-c0c584c9984b"/>
+				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="74f9e89b-3dc4-462b-909c-c0c584c9984b"/>
 				<textFieldExpression><![CDATA[$F{supplier_telepon}]]></textFieldExpression>
 			</textField>
 		</band>
