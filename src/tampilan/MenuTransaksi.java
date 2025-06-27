@@ -107,7 +107,11 @@ public class MenuTransaksi extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void brngmskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brngmskActionPerformed
-           // TODO add your handling code here:
+    panelTarget.removeAll();
+    panelTarget.setLayout(new BorderLayout());
+    panelTarget.add(new BarangMasuk(), BorderLayout.CENTER);
+    panelTarget.revalidate();
+    panelTarget.repaint();           // TODO add your handling code here:
     }//GEN-LAST:event_brngmskActionPerformed
 
     private void brngkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brngkeluarActionPerformed
