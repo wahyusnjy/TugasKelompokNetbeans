@@ -36,11 +36,11 @@ FROM
 	<pageHeader>
 		<band height="66" splitType="Stretch">
 			<staticText>
-				<reportElement x="262" y="29" width="243" height="37" uuid="f1879744-241c-47f4-beb9-820a2afc5d6f"/>
+				<reportElement x="262" y="29" width="328" height="37" uuid="f1879744-241c-47f4-beb9-820a2afc5d6f"/>
 				<textElement>
 					<font fontName="Times New Roman" size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Laporan Stock Barang]]></text>
+				<text><![CDATA[LAPORAN STOCK BARANG]]></text>
 			</staticText>
 		</band>
 	</pageHeader>

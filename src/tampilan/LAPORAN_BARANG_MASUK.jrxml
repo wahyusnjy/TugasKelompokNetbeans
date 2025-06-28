@@ -32,11 +32,11 @@ FROM
 	<pageHeader>
 		<band height="73" splitType="Stretch">
 			<staticText>
-				<reportElement x="276" y="33" width="258" height="40" uuid="560b21a4-f39c-408b-adce-46ff00779c91"/>
+				<reportElement x="276" y="33" width="336" height="40" uuid="560b21a4-f39c-408b-adce-46ff00779c91"/>
 				<textElement>
 					<font fontName="Times New Roman" size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Laporan Barang Masuk]]></text>
+				<text><![CDATA[LAPORAN BARANG MASUK]]></text>
 			</staticText>
 		</band>
 	</pageHeader>
