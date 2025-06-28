@@ -48,26 +48,6 @@ public Kategori() {
         }
     }
 
-    private void ubahMode(Component komponen, boolean modeMalam) {
-        if (komponen instanceof JPanel || komponen instanceof JTabbedPane) {
-            komponen.setBackground(modeMalam ? Color.DARK_GRAY : Color.WHITE);
-        }
-
-        if (komponen instanceof JLabel ||
-            komponen instanceof JButton ||
-            komponen instanceof JToggleButton ||
-            komponen instanceof JCheckBox ||
-            komponen instanceof JRadioButton) {
-            komponen.setForeground(modeMalam ? Color.WHITE : Color.BLACK);
-            komponen.setBackground(modeMalam ? Color.DARK_GRAY : null);
-        }
-
-        if (komponen instanceof Container) {
-            for (Component child : ((Container) komponen).getComponents()) {
-                ubahMode(child, modeMalam);
-            }
-        }
-    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

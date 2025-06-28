@@ -4,10 +4,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import koneksi.koneksi;
 
-/**
- *
- * @author DanarKristiawan
- */
 public class DataLokasi extends javax.swing.JPanel {
     private Connection conn;
     private DefaultTableModel tabmode;
