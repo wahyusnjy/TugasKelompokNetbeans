@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c471daa-dce8-488e-9623-cce7c8c66b54">
 	<property name="ireport.zoom" value="0.75"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="51"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[SELECT
@@ -18,6 +18,7 @@ FROM
 	<field name="barang_masuk_kode_barang" class="java.lang.String"/>
 	<field name="barang_masuk_jumlah" class="java.lang.Integer"/>
 	<field name="barang_masuk_kode_supplier" class="java.lang.String"/>
+	<field name="supplier_nama_supplier" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -32,7 +33,7 @@ FROM
 	<pageHeader>
 		<band height="73" splitType="Stretch">
 			<staticText>
-				<reportElement x="276" y="33" width="336" height="40" uuid="560b21a4-f39c-408b-adce-46ff00779c91"/>
+				<reportElement x="263" y="33" width="336" height="40" uuid="560b21a4-f39c-408b-adce-46ff00779c91"/>
 				<textElement>
 					<font fontName="Times New Roman" size="24" isBold="true"/>
 				</textElement>
@@ -89,10 +90,44 @@ FROM
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch"/>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="387" y="25" width="100" height="20" uuid="2aede774-bcb7-4b83-aba4-8548e7303596"/>
+				<textFieldExpression><![CDATA[$F{supplier_nama_supplier}]]></textFieldExpression>
+			</textField>
+		</band>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement x="540" y="3" width="74" height="26" uuid="25c1cf5d-97f4-4033-85c2-ee332bd4fd01"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="614" y="3" width="156" height="23" uuid="035efcb0-b5d8-48c7-8475-cd43daa7e253"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="540" y="26" width="118" height="26" uuid="f72440fe-90d9-46cc-8db3-53ac3ff98345"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Kepala Gudang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="103" width="140" height="26" uuid="4adde323-3d02-48d2-8799-ae87490fa793"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Danar Kristiawan]]></text>
+			</staticText>
+		</band>
 	</pageFooter>
 	<summary>
 		<band height="42" splitType="Stretch"/>

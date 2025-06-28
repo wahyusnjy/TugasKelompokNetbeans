@@ -28,19 +28,19 @@ FROM
 	<title>
 		<band height="93" splitType="Stretch">
 			<image>
-				<reportElement x="0" y="0" width="376" height="93" uuid="070b56f5-eb1b-4539-93f8-a260db659b3d"/>
+				<reportElement x="0" y="0" width="376" height="93" uuid="6643cd74-b04f-40f0-ac62-0e1a3c6c02ee"/>
 				<imageExpression><![CDATA["C:\\Users\\Henboy\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\\LocalState\\rootfs\\home\\phipin197\\TugasKelompokNetbeans\\src\\Gambar\\logoorian-Copy.jpeg"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="66" splitType="Stretch">
+		<band height="40" splitType="Stretch">
 			<staticText>
-				<reportElement x="262" y="29" width="328" height="37" uuid="f1879744-241c-47f4-beb9-820a2afc5d6f"/>
-				<textElement>
+				<reportElement x="2" y="0" width="747" height="40" uuid="6326cd0f-7e0a-4701-b6ef-e2c248b85fb6"/>
+				<textElement textAlignment="Center">
 					<font fontName="Times New Roman" size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[LAPORAN STOCK BARANG]]></text>
+				<text><![CDATA[LAPORAN STOK BARANG]]></text>
 			</staticText>
 		</band>
 	</pageHeader>
@@ -48,30 +48,37 @@ FROM
 		<band height="21" splitType="Stretch">
 			<staticText>
 				<reportElement mode="Opaque" x="0" y="0" width="107" height="20" backcolor="#FF99FF" uuid="fcc0a4ed-c351-4bbd-b215-fd137e9ad2c5"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[ID Barang]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="107" y="0" width="107" height="20" backcolor="#FF99FF" uuid="b201891b-f3fa-42f9-91b8-fd21bb2ec461"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[Kode Barang]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="214" y="0" width="107" height="20" backcolor="#FF99FF" uuid="90f6810a-be0d-4312-af13-b6d59d59367b"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[Nama Barang]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="321" y="0" width="107" height="20" backcolor="#FF99FF" uuid="7d255041-bd4b-4590-94c0-76342a6b3a50"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[Kode Kategori]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="428" y="0" width="107" height="20" backcolor="#FF99FF" uuid="94924be4-97a0-49b7-82fc-f8b379aea6bb"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[Kode Lokasi]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="535" y="0" width="107" height="20" backcolor="#FF99FF" uuid="4af2f90d-0bec-4a43-987c-91a6a4db3380"/>
-				<text><![CDATA[Stock]]></text>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jumlah]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="642" y="0" width="107" height="20" backcolor="#FF99FF" uuid="12499a20-f4de-48c8-894f-bcdfcd8ec5a6"/>
+				<textElement textAlignment="Center"/>
 				<text><![CDATA[Harga]]></text>
 			</staticText>
 		</band>
@@ -80,30 +87,37 @@ FROM
 		<band height="20" splitType="Stretch">
 			<textField>
 				<reportElement mode="Opaque" x="0" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="a36b0a67-0e8b-4e9f-bf32-9f5d484e77a8"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_id}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="107" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="c9d3ec6f-6d67-454f-909b-5e56331dafc7"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="214" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="737e3fe5-5e59-43af-a9df-522def8b9fa2"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_nama_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="321" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="a50e4f1d-27ba-43a8-8241-7b28a88780ce"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_kategori}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="428" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="0ab88e83-1772-4569-b3c4-c7ddc56b7fdd"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_kode_lokasi}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="535" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="b6e37f8b-950c-4891-9c2f-4cad67c1ad4b"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_stok}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="642" y="0" width="107" height="20" backcolor="#CCCCCC" uuid="8fdf1e28-2a0d-43ba-922e-a83f8c22591b"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_harga}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -112,7 +126,36 @@ FROM
 		<band height="45" splitType="Stretch"/>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="128" splitType="Stretch">
+			<staticText>
+				<reportElement x="522" y="23" width="118" height="26" uuid="ec4690e5-fa2a-484b-9474-c512f7997fb3"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Kepala Gudang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="100" width="140" height="26" uuid="b5107b02-7b95-45a5-873c-6552da462276"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Danar Kristiawan]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="596" y="0" width="156" height="23" uuid="68a4eec8-79a5-4e12-82f2-63e1ff660070"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="522" y="0" width="74" height="26" uuid="8b13882c-6d52-48d3-afe5-8fbbdbfdff5f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
 	</pageFooter>
 	<summary>
 		<band height="42" splitType="Stretch"/>

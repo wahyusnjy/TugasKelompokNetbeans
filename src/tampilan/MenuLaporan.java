@@ -1,8 +1,7 @@
 package tampilan;
 
-import java.awt.BorderLayout;
 import java.io.File;
-import java.sql.Connection;
+import java.sql.*;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
