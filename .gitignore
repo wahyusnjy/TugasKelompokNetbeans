@@ -9,6 +9,13 @@
 # NetBeans project files
 /nbproject/private/
 
+# Ignore compiled Java classes and other generated outputs
+*.class
+*.war
+*.ear
+*.jasper    # Penting: Mengabaikan semua file .jasper di mana pun
+*.jrprint   # Mengabaikan semua file .jrprint di mana pun
+
 # Eclipse project files (if you ever use Eclipse)
 .classpath
 .project
