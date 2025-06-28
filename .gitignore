@@ -9,10 +9,6 @@
 # NetBeans project files
 /nbproject/private/
 
-# JasperReports compiled files
-*.jasper    # Penting: Mengabaikan semua file .jasper di mana pun
-*.jrprint   # Mengabaikan file .jrprint
-
 # Eclipse project files (if you ever use Eclipse)
 .classpath
 .project
