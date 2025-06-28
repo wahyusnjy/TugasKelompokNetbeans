@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1edb1e9-4322-4137-a4b0-8e56668bd537">
-	<property name="ireport.zoom" value="2.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f8bc4a3c-21c9-4fe2-ade5-555ced85f998">
+	<property name="ireport.zoom" value="0.75"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="384"/>
-	<queryString>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
 		<![CDATA[SELECT
      barang_keluar.`no_transaksi` AS barang_keluar_no_transaksi,
      barang_keluar.`tanggal` AS barang_keluar_tanggal,
      barang_keluar.`kode_barang` AS barang_keluar_kode_barang,
      barang_keluar.`jumlah` AS barang_keluar_jumlah,
-     barang_keluar.`tujuan` AS barang_keluar_tujuan
+     barang_keluar.`tujuan` AS barang_keluar_tujuan,
+     barang.`id` AS barang_id,
+     barang.`kode_barang` AS barang_kode_barang,
+     barang.`nama_barang` AS barang_nama_barang,
+     barang.`kode_kategori` AS barang_kode_kategori,
+     barang.`kode_lokasi` AS barang_kode_lokasi,
+     barang.`stok` AS barang_stok,
+     barang.`harga` AS barang_harga
 FROM
-     `barang_keluar` barang_keluar]]>
+     `barang` barang INNER JOIN `barang_keluar` barang_keluar ON barang.`kode_barang` = barang_keluar.`kode_barang`]]>
 	</queryString>
 	<field name="barang_keluar_no_transaksi" class="java.lang.String"/>
 	<field name="barang_keluar_tanggal" class="java.sql.Date"/>
-	<field name="barang_keluar_kode_barang" class="java.lang.String"/>
 	<field name="barang_keluar_jumlah" class="java.lang.Integer"/>
 	<field name="barang_keluar_tujuan" class="java.lang.String"/>
+	<field name="barang_nama_barang" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="94" splitType="Stretch">
+		<band height="93" splitType="Stretch">
 			<image>
-				<reportElement x="0" y="1" width="376" height="93" uuid="7c33e4d1-7918-494e-8a25-e051a089309d"/>
+				<reportElement x="0" y="0" width="376" height="93" uuid="271032a3-83f1-4bb3-8fa9-475fb3a1da25"/>
 				<imageExpression><![CDATA["C:\\Users\\Henboy\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\\LocalState\\rootfs\\home\\phipin197\\TugasKelompokNetbeans\\src\\Gambar\\logoorian-Copy.jpeg"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="91" splitType="Stretch">
+		<band height="40" splitType="Stretch">
 			<staticText>
-				<reportElement x="210" y="41" width="342" height="50" uuid="751ab9a0-260e-46ed-a40f-9265dcd00c23"/>
-				<textElement>
+				<reportElement x="0" y="0" width="750" height="40" uuid="759b58d9-0c73-48d1-bc0b-2f4b1d62a4b3"/>
+				<textElement textAlignment="Center">
 					<font fontName="Times New Roman" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN BARANG KELUAR]]></text>
@@ -41,49 +48,59 @@ FROM
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="22" splitType="Stretch">
+		<band height="21" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#FF99FF" uuid="c20ca4bc-4369-4ef9-bf93-818079d01805"/>
-				<text><![CDATA[barang_keluar_no_transaksi]]></text>
+				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#FF99FF" uuid="5f270157-d4ac-4772-9ce2-6ff3c12bd06e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nomor Transaksi]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#FF99FF" uuid="1de854f3-ff33-47ef-9dfd-a30a2b6e29e7"/>
-				<text><![CDATA[barang_keluar_tanggal]]></text>
+				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#FF99FF" uuid="0779988d-75ef-470f-8e14-6ec6c1da752f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#FF99FF" uuid="f486d980-e145-4abf-ba66-4c1d3b4e5459"/>
-				<text><![CDATA[barang_keluar_kode_barang]]></text>
+				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#FF99FF" uuid="1dee6872-c7c7-4d9f-ad36-656bafca768f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#FF99FF" uuid="8cef1395-5694-4f59-9628-f16ef96e8109"/>
-				<text><![CDATA[barang_keluar_jumlah]]></text>
+				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#FF99FF" uuid="d3dcf432-4b6c-4d27-9f68-0a1b1cea42d1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tujuan]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#FF99FF" uuid="ad517e76-1370-4e5c-b672-cc8058a60a55"/>
-				<text><![CDATA[barang_keluar_tujuan]]></text>
+				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#FF99FF" uuid="0ae4fcc4-6a52-4000-aa37-e8d260b401ea"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jumlah]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="12c88d79-9a2f-497c-b3e4-48784edb83ab"/>
+				<reportElement mode="Opaque" x="0" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="0f785cbc-0cf2-4a25-9e52-724fa544389d"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_keluar_no_transaksi}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="d0d12224-c1ec-4852-a7e7-799c9b2be271"/>
+				<reportElement mode="Opaque" x="150" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="4909d880-eef1-4a60-90cf-51fa7fb1aecc"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_keluar_tanggal}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="e6651777-0b5b-4b08-b6df-77a076a561ad"/>
-				<textFieldExpression><![CDATA[$F{barang_keluar_kode_barang}]]></textFieldExpression>
+				<reportElement mode="Opaque" x="300" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="40aed9ba-d4a8-4af0-800a-2983c6302142"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{barang_nama_barang}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="ce5b947c-d314-4a19-9bdc-976d3175cff7"/>
+				<reportElement mode="Opaque" x="450" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="69879153-efe1-4438-92e3-7097852e60bd"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_keluar_jumlah}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="12b99c0d-a22d-4166-bf63-d78c2b4a08d5"/>
+				<reportElement mode="Opaque" x="600" y="0" width="150" height="20" backcolor="#CCCCCC" uuid="2f31c636-1de9-4c0a-a89f-4b3639305b9b"/>
+				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{barang_keluar_tujuan}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -92,7 +109,36 @@ FROM
 		<band height="45" splitType="Stretch"/>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="127" splitType="Stretch">
+			<staticText>
+				<reportElement x="520" y="0" width="74" height="26" uuid="e8db39a1-dc73-4337-9271-98f9e94d4035"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="594" y="0" width="156" height="23" uuid="b6b3bcf2-1372-4787-8b39-cc2844ca1587"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="520" y="23" width="118" height="26" uuid="2829bef4-8ef1-4ab2-89e8-7deebc64ae0a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Kepala Gudang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="520" y="100" width="140" height="26" uuid="4ad8931e-794f-4451-a29f-31789188c220"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Danar Kristiawan]]></text>
+			</staticText>
+		</band>
 	</pageFooter>
 	<summary>
 		<band height="42" splitType="Stretch"/>
