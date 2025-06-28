@@ -1,9 +1,17 @@
 # Compiled class files
 /build/
 /dist/
+*.class     # Penting: Mengabaikan semua file .class di mana pun
+*.war       # Mengabaikan file WAR (untuk aplikasi web)
+*.ear       # Mengabaikan file EAR (untuk aplikasi enterprise)
+*.zip       # Mengabaikan file zip yang mungkin dihasilkan
 
 # NetBeans project files
 /nbproject/private/
+
+# JasperReports compiled files
+*.jasper    # Penting: Mengabaikan semua file .jasper di mana pun
+*.jrprint   # Mengabaikan file .jrprint
 
 # Eclipse project files (if you ever use Eclipse)
 .classpath
