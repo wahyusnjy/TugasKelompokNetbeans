@@ -5,6 +5,13 @@
 *.ear       # Mengabaikan file EAR (untuk aplikasi enterprise)
 *.zip       # Mengabaikan file zip yang mungkin dihasilkan
 
+build.xml
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+nbproject/project.properties
+nbproject/project.xml
+/src/tampilan/*.jasper
+
 # NetBeans project files
 /nbproject/private/
 
@@ -31,3 +38,4 @@
 Thumbs.db # Windows
 ehthumbs.db # Windows
 Desktop.ini # Windows
+/dist/
