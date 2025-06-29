@@ -1,5 +1,7 @@
 # Compiled class files
 /build/
+/dist/
+/lib/
 *.class     # Penting: Mengabaikan semua file .class di mana pun
 *.war       # Mengabaikan file WAR (untuk aplikasi web)
 *.ear       # Mengabaikan file EAR (untuk aplikasi enterprise)
